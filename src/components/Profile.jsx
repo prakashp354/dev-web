@@ -1,5 +1,5 @@
 import React from 'react'
-import EdirProfile from './EditProfile'
+import EditProfile from './EditProfile'
 import { useSelector } from 'react-redux'
 
 const Profile = () => {
@@ -7,7 +7,7 @@ const Profile = () => {
   return (
     user&&(
     <div>
-      <EdirProfile user={user}/>
+      <EditProfile user={user}/>
     </div>
     ) 
   )
