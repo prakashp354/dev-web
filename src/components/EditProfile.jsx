@@ -90,9 +90,9 @@ const EditProfile = ({ user }) => {
            value={gender} 
            onChange={e => setGender(e.target.value)}>
            <option value="" disabled>Select gender</option>
-           <option value="male">male</option>
-           <option value="female">female</option>
-          <option value="others">others</option>
+           <option value="male">Male</option>
+           <option value="female">Female</option>
+          <option value="others">Others</option>
             </select>
             </fieldset>
   

@@ -14,7 +14,8 @@ const UserCard = ({ user }) => {
       const res = await axios.post(BASE_URL+"/request/send/"+status+"/"+userId ,{},{withCredentials:true});
       dispatch(removeUserFromFeed(userId));
     } catch (err) {
-      
+      console.error("Request failed:", err.response?.data || err.message);
+      alert(err.response?.data?.message || "Something went wrong")
     }
   }
 

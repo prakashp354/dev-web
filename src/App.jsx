@@ -8,6 +8,8 @@ import Profile from "./components/Profile";
 import Feed from "./components/Feed ";
 import Connections from "./components/Connections";
 import Requests from "./components/Requests";
+import Premium from "./components/Premium";
+import Chat from "./components/Chat";
 
 function App() {
   
@@ -23,6 +25,8 @@ function App() {
       <Route path="/Profile" element={<Profile/>}/>
       <Route path="/Connections" element={<Connections/>}/>
       <Route path="/Requests" element={<Requests/>}/>
+      <Route path="/Premium" element={<Premium/>}/>
+      <Route path="/chat/:targetUserId" element={<Chat/>}/>
       </Route>
 
     </Routes>
